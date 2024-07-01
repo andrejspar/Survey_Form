@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Gym Feedback Survey</h1>
+    <p id="description">
+      Thank you for taking the time to provide your feedback. This survey will
+      help us understand your experience at our gym and identify areas for
+      improvement. Your responses are anonymous and will be kept confidential.
+    </p>
+    <form id="survey-form">
+      <div class="form-div">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" placeholder="Enter Your Name" required />
+      </div>
+      <div class="form-div">
+        <label id="email-label" for="email">E-mail:</label>
+        <input
+          id="email"
+          type="email"
+          placeholder="Enter Your E-mail"
+          required
+        />
+      </div>
+      <div class="form-div">
+        <label id="number-label" for="number">Phone Number:</label>
+        <input
+          id="number"
+          type="number"
+          min="1000000000"
+          max="9999999999"
+          placeholder="Enter Your Phone Number"
+          required
+        />
+        <small>Format: 10 digits without spaces or dashes</small>
+      </div>
+      <div class="form-div">
+        <label id="dropdown-label" for="dropdown"
+          >In what type of workout are you interested?</label
+        >
+        <select id="dropdown" name="dropdown" required>
+          <option value="" disabled selected>Select an option</option>
+          <option value="group-classes">Group classes</option>
+          <option value="individual-workout">Individual workout</option>
+        </select>
+      </div>
+      <div class="form-div">
+        <label>Rate your overall gym experience:</label>
+        <div class="rating-inputs">
+          <input type="radio" id="rating-5" name="rating" value="5" checked />
+          <label for="rating-5">5</label>
+
+          <input type="radio" id="rating-4" name="rating" value="4" />
+          <label for="rating-4">4</label>
+
+          <input type="radio" id="rating-3" name="rating" value="3" />
+          <label for="rating-3">3</label>
+
+          <input type="radio" id="rating-2" name="rating" value="2" />
+          <label for="rating-2">2</label>
+
+          <input type="radio" id="rating-1" name="rating" value="1" />
+          <label for="rating-1">1</label>
+        </div>
+      </div>
+      <div class="form-div">
+        <label>What days do you prefer to workout?</label>
+        <div class="workout-days">
+          <input
+            type="checkbox"
+            id="monday"
+            name="workout_days"
+            value="monday"
+          />
+          <label for="monday">Monday</label>
+
+          <input
+            type="checkbox"
+            id="tuesday"
+            name="workout_days"
+            value="tuesday"
+          />
+          <label for="tuesday">Tuesday</label>
+
+          <input
+            type="checkbox"
+            id="wednesday"
+            name="workout_days"
+            value="wednesday"
+          />
+          <label for="wednesday">Wednesday</label>
+
+          <input
+            type="checkbox"
+            id="thursday"
+            name="workout_days"
+            value="thursday"
+          />
+          <label for="thursday">Thursday</label>
+
+          <input
+            type="checkbox"
+            id="friday"
+            name="workout_days"
+            value="friday"
+          />
+          <label for="friday">Friday</label>
+        </div>
+      </div>
+      <div class="form-div">
+        <label for="comment"
+          >Do you have any additional comments about your experience?
+          (Optional)</label
+        >
+        <textarea
+          id="comment"
+          name="comment"
+          rows="4"
+          placeholder="Your comment"
+        ></textarea>
+      </div>
+      <button id="submit">Submit</button>
+    </form>
+    <footer>
+      <p>Thank you for your time and feedback</p>
+    </footer>
+  </body>
+</html>

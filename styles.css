@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1988&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); /* Replace with your image path */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Darker semi-transparent black overlay */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  color: #fff; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better visibility */
+}
+
+p {
+  color: #eee; /* Light gray text color */
+  margin-bottom: 20px;
+}
+
+/* Form Container */
+#survey-form {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* Slightly opaque white background for form */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Form Elements */
+.form-div {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+small {
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+/* Adjustments for Rating Inputs */
+.rating-inputs {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next line if necessary */
+  gap: 5px; /* Adjust space between radio buttons and labels */
+}
+
+.rating-inputs label {
+  display: inline-block; /* Ensure labels are inline with radio buttons */
+  text-align: center; /* Center align the labels */
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.rating-inputs input[type="radio"] {
+  margin-right: 5px; /* Adjust space between radio buttons and labels */
+  margin-bottom: 5px; /* Adjust space between radio buttons */
+}
+
+/* Adjustments for Workout Days Inputs */
+.workout-days {
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to next line if necessary */
+  gap: 5px; /* Adjust space between checkboxes and labels */
+}
+
+.workout-days label {
+  display: inline-block; /* Ensure labels are inline with checkboxes */
+  text-align: center; /* Center align the labels */
+  margin-bottom: 0; /* Remove default margin */
+}
+
+.workout-days input[type="checkbox"] {
+  margin-right: 5px; /* Adjust space between checkbox and label */
+  margin-bottom: 5px; /* Adjust space between checkboxes */
+}
+
+/* Submit Button */
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+footer p {
+  font-size: 14px;
+  color: #eee; /* Light gray text color */
+}
